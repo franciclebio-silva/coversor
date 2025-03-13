@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <title> Comversor </title>
 </head>
 
@@ -18,16 +18,20 @@
     <main>
         <label>
             converter <b>de</b>
-            <select>
-                <option>R$ real brasileiro</option>
+            <select class="select3">
+                <option value="real">R$ real brasileiro</option> 
+               
             </select>
         </label>
 
         <label>
             converter <b>para</b>
-            <select class="select2">
-                <option value="dolar">US$ Dólar americano</option>
-                <option value="euro">€ Euro</option>
+            <select class="select1">
+                <option value="Dolar">US$ Dólar americano</option>
+                <option value="Euro">€ Euro</option>
+                <option value="Libra">£ Libra</option>
+                <option value="Bitcoin">Bitcoin</option>
+                <option value="Real">R$ real brasileiro</option>
             </select>
         </label>
 
@@ -36,15 +40,15 @@
             <input class="inputValue" placeholder="R$ 10.000.00 ">
         </label>
 
-        <button class="botaoConverte" >Converter</button>
+        <button class="botaoConverte">Converter</button>
 
         <section>
 
 
             <div class="box">
-                <img src="img/bra.png" alt="logo-brasil">
+                <img class="img-bra" src="img/bra.png" alt="logo-brasil">
                 <p class="moeda-bra">Real</p>
-                <p class="moeda-value">R$ 0,00</p>
+                <p class="moedaConverte">R$ 0,00</p>
             </div>
 
             <img class="seta" src="./img/seta.png" alt="logo-seta">
@@ -52,7 +56,7 @@
             <div class="box">
                 <img class="img-usa" src="img/usa.png" alt="logo-usa">
                 <p class="moeda-bra" id="moedaDola" >dolar Americano</p>
-                <p class="moeda-value1">R$ 0,00</p>
+                <p class="moedaConvertida">R$ 0,00</p>
             </div>
 
         </section>
@@ -60,6 +64,6 @@
     </main>
 
 </body>
-<script src="arquivo.js"></script>
+<script src="scripts.js"></script>
 
 </html>
